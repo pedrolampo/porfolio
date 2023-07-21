@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  margin-top: 0.5em;
   font-family: 'Roboto Mono', monospace, -apple-system, BlinkMacSystemFont,
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -16,7 +17,203 @@ body {
   color: #fff;
 }
 
+body:has(.projects-open) {
+  margin: 0;
+  background-color: rgb(209, 209, 209);
+  color: #000;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h3 {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.card-heading:hover {
+  color: rgb(112, 45, 18);
+}
+p {
+  margin: 0;
+}
+
+.blue {
+  color: #48ebe5;
+}
+.exe-green {
+  color: #1fe977;
+}
+
+.console {
+  width: 75%;
+  margin-left: 0.25em;
+  font-size: 0.8em;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  color: rgb(209, 209, 52);
+  padding-right: 0.5em;
+}
+.location > span {
+  color: rgb(226, 61, 226);
+}
+
+.input-container input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 80%;
+  padding: 0;
+}
+
+.output {
+  padding-bottom: 0.25em;
+}
+
+.previous-prompts-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cmd-table {
+  margin: 1em 0 0 1em;
+  padding: 0;
+  width: 60%;
+}
+.cmds-table tr {
+  width: 100%;
+}
+.cmds-table td {
+  width: 50%;
+}
+
+.projects-window {
+  position: absolute;
+  top: 70px;
+  left: 60px;
+  width: 80%;
+  max-width: 850px;
+  height: 600px;
+  background-color: rgb(209, 209, 209);
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 5px;
+  color: #000;
+  /* overflow: hidden; */
+  font-family: Montserrat;
+}
+.projects-window ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.projects-window ::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: rgb(90, 90, 90);
+}
+.projects-window ::-webkit-scrollbar {
+  width: 10px;
+}
+.projects-window .folder-main-content {
+  overflow: auto;
+  height: calc(100% - 2.5em);
+  overflow-x: hidden;
+}
+.projects-window .top-bar {
+  height: 2.5em;
+  width: 100%;
+  padding: 0 1em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  background-color: rgb(41, 41, 41);
+}
+.projects-window .top-bar .close-btn {
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projects-container img {
+  width: 100%;
+  border-radius: 0.5em 0.5em 0 0;
+}
+.projects-container a:has(img.palabros) {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#39da80, #48ebe5);
+}
+.projects-container img.palabros {
+  height: 100%;
+  width: initial;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+.projects-container p {
+  font-size: 0.9em;
+}
+.projects-container .project {
+  box-shadow: 0 0 10px 3px black;
+  transition: scale 100ms ease-in-out;
+  border: 1px solid white;
+}
+.projects-container .project:hover {
+  scale: 1.01;
+  transform-origin: center;
+}
+.github-icon {
+  fill: var(--github-icon-color);
+  width: 35px;
+}
+.github-icon:hover {
+  fill: rgb(112, 45, 18);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+  border-bottom: 0.1em solid black;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-section {
+  display: flex;
+  align-items: center;
+}
+.navbar-section > img {
+  border: none;
+  padding-left: 1rem;
+  cursor: initial;
+}
+.navigation-btn {
+  display: inline-block;
+  margin: 0.25rem;
+  margin-right: 1rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  padding-left: 1.5rem;
+  text-decoration: none;
+  font-size: 1.25em;
+  border-left: 1px solid white;
+  color: #fff;
+  cursor: pointer;
 }
