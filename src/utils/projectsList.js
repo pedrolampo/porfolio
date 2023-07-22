@@ -108,4 +108,13 @@ export const projectsList = [
     paragraph:
       "This is my first mobile app. It's made with React Native/Expo. It's another version of the other word game I've done. You can find it in the Play Store!",
   },
+  {
+    id: 13,
+    name: 'Cuberun',
+    imgName: 'cuberun',
+    githubUrl: 'https://github.com/pedrolampo/cuberun',
+    demoUrl: 'https://github.com/pedrolampo/cuberun',
+    paragraph:
+      "My first project/game in Unity. It's all coded in C#. It's a really simple game, but I'm really proud that I made it all by myself.",
+  },
 ];
