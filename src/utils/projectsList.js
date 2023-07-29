@@ -117,4 +117,13 @@ export const projectsList = [
     paragraph:
       "My first project/game in Unity. It's all coded in C#. It's a really simple game, but I'm really proud that I made it all by myself.",
   },
+  {
+    id: 14,
+    name: 'Flappy Birds Clone',
+    imgName: 'florpy-borbs',
+    githubUrl: 'https://github.com/pedrolampo/florpy-borbs',
+    demoUrl: 'https://github.com/pedrolampo/florpy-borbs',
+    paragraph:
+      'Flappy Birds Clone. Made using Unity and coded in C#. Another cloned game to traing my skills in C# and unity.',
+  },
 ];
