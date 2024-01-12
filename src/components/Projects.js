@@ -45,6 +45,14 @@ export default function Projects({
             >
               Resume
             </span>
+            <span
+              className="navigation-btn"
+              onClick={() =>
+                window.open('media/pdf/viseven-recom-letter.pdf', '_blank')
+              }
+            >
+              Viseven's Letter
+            </span>
           </div>
         </header>
       )}

@@ -34,6 +34,10 @@ export const outputs = {
             <td>start "" resume.pdf</td>
             <td>Opens resume in a new tab</td>
           </tr>
+          <tr>
+            <td>start "" viseven-recom-letter.pdf</td>
+            <td>Opens Viseven's Recommendation Letter in a new tab</td>
+          </tr>
         </tbody>
       </table>
       <br />
@@ -65,6 +69,8 @@ export const outputs = {
       <br />
       resume.pdf
       <br />
+      viseven-recom-letter.pdf
+      <br />
       github
       <br />
       contact
@@ -73,6 +79,7 @@ export const outputs = {
   'cd github': 'redirecting to github...',
   'cd contact': 'redirecting...',
   'start "" resume.pdf': 'start "" resume.pdf',
+  'start "" viseven-recom-letter.pdf': 'start "" viseven-recom-letter.pdf',
   'start projects': 'start projects',
   exit: 'logout',
   projectsList: (

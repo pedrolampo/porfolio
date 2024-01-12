@@ -135,6 +135,10 @@ export default function Input({
             window.open('media/pdf/resume.pdf', '_blank');
             break;
 
+          case 'start "" viseven-recom-letter.pdf':
+            window.open('media/pdf/viseven-recom-letter.pdf', '_blank');
+            break;
+
           default:
             break;
         }
