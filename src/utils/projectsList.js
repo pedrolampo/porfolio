@@ -18,6 +18,15 @@ export const projectsList = [
       "This started as a simple note taking app, just so I can practice React. But it ended being very useful, both for learning how to document in markdown and for having all those notes on hand. It's made in React and it uses Firebase for storing all the info, aswell as the authenticaton method.",
   },
   {
+    id: 15,
+    name: 'Steam Redesign',
+    imgName: 'steam-redesign',
+    githubUrl: 'https://github.com/pedrolampo/steam-redesign',
+    demoUrl: 'https://peter-steam-redesign.vercel.app/',
+    paragraph:
+      "I stumbled across with a video where someone re-designed the complete Steam UI, and I loved it! Huge disclaimer: The design is not mine, all credits go to Juxtopposed (links in the github README). I liked it so much, that I decided to make it real, it's still under development.",
+  },
+  {
     id: 3,
     name: 'Wordle Clone',
     imgName: 'wordle-clone',

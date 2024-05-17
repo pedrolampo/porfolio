@@ -41,7 +41,7 @@ export const outputs = {
         </tbody>
       </table>
       <br />
-      Last updated: January 2024
+      Last updated: May 2024
       <br />
     </span>
   ),
